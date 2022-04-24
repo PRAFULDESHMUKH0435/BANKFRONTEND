@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4511E"
+    tools:context=".NetBanking">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/cre_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/bank"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/benficiary_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:hint="Enter Benificiary Name" />
+
+            <EditText
+                android:id="@+id/benificiary_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:hint="Enter Benificary Account Number "
+                android:inputType="phone" />
+
+
+            <EditText
+                android:id="@+id/enter_ifsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:hint="Enter IFSC Code : "
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/enter_micr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:hint="Enter MICR Code : "
+                android:inputType="text" />
+
+
+
+            <EditText
+                android:id="@+id/ben_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:hint="Enter Amount To Send : "
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/ben_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:background="#FDD835"
+                android:text="Send Money"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
